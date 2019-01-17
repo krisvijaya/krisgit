@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+  <test name="Test">
+  <parameter name="mobno" value="8668218023">
+  <parameter name="pwd" value="Preeti123">
+    <classes>  
+      <class name=	"krishnew.NewTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

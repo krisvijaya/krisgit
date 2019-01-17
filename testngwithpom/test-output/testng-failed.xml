@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="waymessage" value="hai"/>
+    <parameter name="waymobno" value="8341111338"/>
+    <parameter name="mobilenofill" value="8790118735"/>
+    <parameter name="waypwd" value="E2832M"/>
+    <classes>
+      <class name="way2smstests.Way2smstestng">
+        <methods>
+          <include name="launch"/>
+          <include name="close"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- way2smstests.Way2smstestng -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

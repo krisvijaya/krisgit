@@ -1,0 +1,30 @@
+package joshi;
+
+import java.util.Scanner;
+
+public class Repeatednum {
+
+	public static void main(String[] args) 
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("enter the value for number");
+		sc.nextInt();
+		int[]obj= {1,1,2,2,5,7,8,9};
+		for(int i=0;i<obj.length-1;i++)
+		{
+			for(int j=i+1;j<obj.length;j++)
+			{
+				if(obj[i]==obj[j])
+				{
+					System.out.println("duplicate number"+obj[j]);
+				}
+				/*else
+				{
+					System.out.println("not dupliate number available");
+				}*/
+			}
+		}
+
+	}
+
+}

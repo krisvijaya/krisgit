@@ -1,0 +1,30 @@
+package rohit;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Makemytrip 
+{
+
+	public static void main(String[] args) throws Exception
+	{
+		System.setProperty("webdriver.chrome.driver","D:\\batch239\\chromedriver.exe");
+		ChromeDriver driver=new ChromeDriver();
+		driver.get("https://www.makemytrip.com/");
+		Thread.sleep(5000);
+		WebElement e = driver.findElement(By.xpath("(//input[@class='input_fromto checkSpecialCharacters ui-autocomplete-input'])[1]"));
+		e.clear();
+		e.click();
+		Thread.sleep(5000);
+		List<WebElement> l1 = driver.findElements(By.xpath("//ul[@class='ui-autocomplete ui-front ui-menu ui-widget ui-widget-content hp-widget__sfrom']/li"));
+		System.out.println(l1.size());
+		for(int i=0;i<l1.size();i++)
+		{
+			Thread.sleep(5000);
+			System.out.println(l1.get(i).getText());
+		}
+	}
+}

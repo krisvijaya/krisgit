@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+  <test name="Test1">
+  <parameter name="browser" value="chrome"/>
+  <parameter name="search word" value="kalam"/>
+    <classes>
+      <class name="rohit.NewTest"/>
+    </classes>
+     <test name="Test1">
+  <parameter name="browser" value="chrome"/>
+  <parameter name="search word" value="appium"/>
+    <classes>
+      <class name="rohit.NewTest"/>
+      <classes>
+      <test name="Test1">
+  <parameter name="browser" value="firefox"/>
+  <parameter name="search word" value="ronaldo"/>
+    <classes>
+      <class name="rohit.NewTest"/>
+      <classes>
+  </test>
+</suite>

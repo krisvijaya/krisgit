@@ -1,0 +1,30 @@
+package rohit;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class Joshipom 
+{
+public static void main(String[] args) 
+{
+try
+{
+	System.setProperty("webdriver.chrome.driver","D:\\batch239\\chromedriver.exe");
+	ChromeDriver driver=new ChromeDriver();
+	Way2first wf=new Way2first(driver);
+	driver.get("http://www.way2sms.com/");
+	WebDriverWait w=new WebDriverWait(driver,20);
+	w.until(ExpectedConditions.visibilityOf(wf.waymobno));
+	wf.fillwaymobno("8341111338");
+	wf.fillwaypwd("E2832M");
+	wf.clickwaylogin();
+	}
+catch(Exception ex)
+{
+	System.out.println(ex.getMessage());
+}
+
+	}
+
+}

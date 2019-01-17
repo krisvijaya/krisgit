@@ -1,0 +1,23 @@
+package preethi;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Openfb 
+{
+
+	public static void main(String[] args) 
+	{
+		WebDriver driver; 
+	System.setProperty("webdriver.chrome.driver", "D:\\batch239\\chromedriver.exe");
+	driver=new ChromeDriver();
+	driver.get("http://www.way2sms.com");
+	driver.switchTo().frame("bottom");
+	driver.findElement(By.linkText("//a[text()='Facebook']")).click();
+	
+	
+
+	}
+
+}

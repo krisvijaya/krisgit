@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test  name="Test">
+  <parameter name="waymobno" value="8341111338"></parameter>
+  <parameter name="waypwd" value="E2832M"></parameter>
+  <parameter name="mobilenofill" value="8790118735"></parameter>
+  <parameter name="waymessage" value="hai"></parameter>
+  <classes>
+      <class name="way2smstests.Way2smstestng"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

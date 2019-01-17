@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+ <test name="Test1">
+ <parameter name="browser" value="chrome"/>
+ <parameter name="search word" value="dhoni"/>
+  <classes>
+   <class name="daddy.NewTest"/>
+  <classes>
+  <test name="Test2">
+  <parameter name="browser" value="firefox"/>
+  <parameter name="search word" value="rohit"/>
+  <classes>
+     <class name="daddy.NewTest"/>
+    </classes>
+ </test> 
+</suite>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="2" name="Test2(failed)" parallel="tests">
+    <parameter name="mbno" value="Preeti123"/>
+    <classes>
+      <class name="krishnew.Testngwithpom">
+        <methods>
+          <include name="Login" invocation-numbers="0"/>
+          <include name="close"/>
+          <include name="Preeti"/>
+        </methods>
+      </class> <!-- krishnew.Testngwithpom -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+  <test thread-count="2" name="Test1(failed)" parallel="tests">
+    <parameter name="mbno" value="8668218023"/>
+    <parameter name="pwd" value="Preeti123"/>
+    <classes>
+      <class name="krishnew.Testngwithpom">
+        <methods>
+          <include name="Login" invocation-numbers="0"/>
+          <include name="close"/>
+          <include name="Preeti"/>
+        </methods>
+      </class> <!-- krishnew.Testngwithpom -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->
